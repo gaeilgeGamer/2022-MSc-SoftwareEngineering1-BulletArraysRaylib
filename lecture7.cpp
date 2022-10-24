@@ -1,5 +1,4 @@
 #include "raylib.h"
-//#define num_bullets 50
 struct Player {
     Rectangle rect;
     Vector2 speed;
