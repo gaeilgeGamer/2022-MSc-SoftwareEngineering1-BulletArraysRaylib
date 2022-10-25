@@ -88,15 +88,6 @@ DrawRectangleRec(player.rect,player.color);
     }
 
 
-if(IsKeyPressed(KEY_A)&&player.rect.x>windowWidth-player.rect.width){
-player.speed.x = -10;
-}
-if(IsKeyPressed(KEY_D)&&player.rect.x<0){
-player.speed.x = 10;
-}
-player.rect.x += player.speed.x;
-if(player.rect.x<0||player.rect.x>windowWidth-player.rect.width)
-{player.speed.x = 0;}
 
 ClearBackground(WHITE); 
 EndDrawing();
